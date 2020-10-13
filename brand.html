@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="brand.css">
+  </head>
+<body class="theBody" id="theBody ">
+
+
+  <form action="/action_page.php">
+<div class="loginContainer" id="loginContainer" style="display: none;">
+  <span onclick="closeLogin()" style="user-select:none;cursor:pointer;position: absolute;top:3px;right: 10px;font-size: 18px;">x</span>
+<div class="loginContainerInside" id="loginContainerInsideOne" >
+<img src="img/My Logo BL.png" style="width: 200px;user-select: none;">
+<h1>LOGIN</h1>
+<input type="text" name="username"  placeholder="Username" required><br style="user-select: none;"><br style="user-select: none;">
+<input type="password" name="password"  placeholder="Password" required><br style="user-select: none;">
+<input type="checkbox" name="checkbox" style="margin-left: -150px;margin-top:10px;position: relative;">Remember me<br/>
+<a style=" cursor: pointer;user-select:none;position:absolute;z-index: -1;width:100%;left:0;margin-top:-16px">&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Forgot Password</a><br style="user-select: none;">
+<input class="buttonLogin"type="submit" name="button" value="Submit" style="background:black;color:white;border:none;" >
+<input  onclick="document.getElementById('signupContainer').style.display='block'" class="buttonLogin" type="button" name="button" value="Signup"><br style="user-select: none;">
+<br style="user-select: none;">
+<p style="font-weight: bold;color:black;opacity: 0.8;">OR</p>
+<a href="https://www.google.com/gmail/"><input class="buttonMedia" id="buttonMediaOneType" type="button" value="Login with Gmail" style="background:#db3236;color:white;
+border:none;border-radius: 5px;"><br style="user-select: none;"> </a>
+<a href="https://www.facebook.com/"><br style="user-select: none;">
+<input  class="buttonMedia" id="buttonMediaTwoType"  type="button" value="Login with Facebook"
+style="background: #3b5998;color:white;border-radius: 5px;border:none;">
+</a>
+</div>
+</div>
+</div>
+
+
+<div class="signupContainer" id="signupContainer" style="display: none;">
+  <span onclick="closeLogin()" style="user-select:none;cursor:pointer;position: absolute;top:3px;right: 10px;font-size: 18px;">x</span>
+<div class="loginContainerInside" id="loginContainerInsideOne" >
+<img src="img/My Logo BL.png" style="width: 200px;user-select: none;">
+<h1>Signup</h1>
+<input type="text" name="username"  placeholder="Email" required><br style="user-select: none;"><br style="user-select: none;">
+<input type="password" name="password"  placeholder="Password" required><br style="user-select: none;"><br style="user-select: none;">
+<input type="checkbox" name="checkbox" style="margin-left:-50px;margin-top:10px;position: relative;">Agree with the Terms and Policy<br style="user-select: none;">
+<br style="user-select: none;">
+<input class="buttonLogin"type="submit" name="button" value="Submit" style="background:black;color:white;border:none;" ><br style="user-select: none;"><br style="user-select: none;">
+<input onclick="document.getElementById('loginContainer').style.display='block';
+document.getElementById('signupContainer').style.display='none'"  class="buttonLogin" type="button" name="button" value="Already have an account"><br style="user-select: none;">
+<br style="user-select: none;">
+<p style="font-weight: bold;color:black;opacity: 0.8;">OR</p>
+<a href="https://www.google.com/gmail/">
+<input class="buttonMedia" id="buttonMediaOne" type="button" value="Connect with Gmail" style="background:#db3236;color:white;
+border:none;border-radius: 5px;"><br style="user-select: none;"> 
+<br style="user-select: none;"></a>
+<a href="https://www.facebook.com/">
+<input class="buttonMedia" id="buttonMediaTwotype"  type="button" value="Connect with Facebook"
+style="background: #3b5998;color:white;border-radius: 5px;border:none;">
+</a>
+</div>
+</div>
+</div>
+</form>
+
+
+
+<div class="containerOfAll" id="containerOfAll" style="opacity: 1;" >
+  <header >
+    <nav>
+      <div class="loginButton" id="loginButton">
+        <button onclick="showLogin()">Login</button>
+        <button onclick="document.getElementById('signupContainer').style.display='block';
+          document.getElementById('containerOfAll').style.opacity='0.3';+e">Signup</button>
+      </div>
+<div class="topnav" id="myTopnav">
+
+  <a href="index.html" class="activ">Home</a>
+  <a href="brand.html" style="color:red">Brand</a>
+  <a href="ranking.html">Ranking</a>
+  <a href="faqs.html">FAQ's</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+</nav>
+
+<div class="banner" id="banner">
+  
+  <div class="slideshow-container">
+
+    <div class="buttonBelowBanner" id="buttonBelowBanner" 
+    style="position: absolute;bottom:80px;right:30px;">
+      <button onclick="getStarted()"><a href="#containerBody" style="color:red;text-decoration:none;">
+        Get Started</a></button>
+      <button onclick="showLogin()">Login</button>
+    </div>
+
+    
+    <div class="mySlides fade">
+        <img src="img/smaretphone1.jpg" style="width:100%">
+       
+      </div>
+    <div class="mySlides fade">
+    <a href="#"> <img src="img/smaretphone.jpg" style="width:100%"></a>
+   
+    </div>
+    
+    
+    <div class="mySlides fade">
+      <img src="img/smaretphone3.jpg" style="width:100%">
+  
+    </div>
+
+    <div class="mySlides fade">
+      <a href="#"> <img src="img/smaretphone2.jpg" style="width:100%"></a>
+     
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+</div>
+
+  </header>
+
+  </div>
+  <div class="containerBody" id="containerBody" style="border:1px solid red;">
+
+  </div>
+
+<footer style="text-align:center;background: #070d11;padding:80px;">
+<div class="mediaIcon" id="mediaIcon">
+ <a href="https://www.facebook.com/bryanT.lapitan"> <div class="iconOne" id="iconMedia"><img src="img/LOGO FB.png" alt=""><p>Facebook</p></div></a>
+ <a href="https://www.instagram.com/bryantlapitan/?hl=en"> <div class="iconTwo" id="iconMedia"><img src="img/Instagram.png" alt=""><p>Instagram</p></div></a>
+ <a href=""> <div class="iconThree" id="iconMedia"><img src="img/Tumblr.png" alt=""><p>Tumblr</p></div></a>
+  <a href="https://www.pinterest.ph/brylapitan123/"><div class="iconFour" id="iconMedia"><img src="img/Pinterest.png" alt=""><p>Pinterest</p></div></a>
+
+  
+</div>
+<br/>
+<div class="privacyPolicy"><a href="#">Privacy</a> | <a href="#">Policy</a></div><br/>
+<p style="font-family: arial;">&copy;CopyRight All Right Reserved 2020</p>
+</footer>
+<div class="cookies" id="cookies">
+  <button onclick="allowFunction()">Allow</button> <button onclick="cancelCookies()">Cancel</button>
+  
+<p> &nbsp;&nbsp;&nbsp;Web servers pass cookies to your web browser when you visit
+   certain sites on the Internet. These cookies usually contain an ID 
+   number and the URL that set the cookie.</p>
+
+</div>
+</div>
+
+     
+
+
+    <script src="main.js">
+
+</script>
+
+
+    
+</body>
+</html>
